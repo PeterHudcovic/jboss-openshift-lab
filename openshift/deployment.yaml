@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: wildfly
-          image: quay.io/wildfly/wildfly:41.0.1.Final-jdk21
+          image: default-route-openshift-image-registry.apps.rm2.thpm.p1.openshiftapps.com/peter-hudcovic-dev/donation-wildfly:1.0
           ports:
             - name: http
               containerPort: 8080
