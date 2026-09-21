@@ -1,0 +1,14 @@
+embed-server --std-out=echo
+
+/subsystem=datasources/data-source=DonationDS:add( \
+    jndi-name="java:/jdbc/DonationDS", \
+    driver-name="postgresql-42.7.13.jar", \
+    connection-url="jdbc:postgresql://postgresql:5432/donations", \
+    user-name="${env.POSTGRES_USER}", \
+    password="${env.POSTGRES_PASSWORD}", \
+    min-pool-size=2, \
+    max-pool-size=10, \
+    enabled=true \
+)
+
+stop-embedded-server

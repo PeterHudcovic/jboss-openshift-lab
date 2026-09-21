@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: wildfly
-          image: default-route-openshift-image-registry.apps.rm2.thpm.p1.openshiftapps.com/peter-hudcovic-dev/donation-wildfly:1.0
+          image: default-route-openshift-image-registry.apps.rm2.thpm.p1.openshiftapps.com/peter-hudcovic-dev/donation-wildfly:1.5
           ports:
             - name: http
               containerPort: 8080
