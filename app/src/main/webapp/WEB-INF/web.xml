@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd"
+         version="6.1">
+    <display-name>OpenShift Donation Lab</display-name>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>SuccessPage</servlet-name>
+        <jsp-file>/WEB-INF/views/success.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SuccessPage</servlet-name>
+        <url-pattern>/success</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CancelPage</servlet-name>
+        <jsp-file>/WEB-INF/views/cancel.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CancelPage</servlet-name>
+        <url-pattern>/cancel</url-pattern>
+    </servlet-mapping>
+</web-app>

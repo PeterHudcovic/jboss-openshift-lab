@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: wildfly
+  namespace: peter-hudcovic-dev
+spec:
+  to:
+    kind: Service
+    name: wildfly
+  port:
+    targetPort: http
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

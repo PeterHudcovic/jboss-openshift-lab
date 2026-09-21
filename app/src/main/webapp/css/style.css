@@ -1,0 +1,29 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #18332f; background: #f3f6f4; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.6; }
+a { color: #126b56; text-underline-offset: .2em; }
+.site-header { max-width: 960px; margin: auto; padding: 28px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { font-weight: 750; text-decoration: none; color: #18332f; }
+.badge { font-size: .75rem; white-space: nowrap; padding: 4px 12px; border-radius: 30px; background: #e3ece7; }
+.card { max-width: 680px; margin: 32px auto; padding: 48px; background: white; border: 1px solid #dce5de; border-radius: 18px; box-shadow: 0 12px 40px #18332f08; }
+.eyebrow { text-transform: uppercase; font-size: .75rem; letter-spacing: .12em; font-weight: 700; color: #477364; margin-top: 0; }
+h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.15; letter-spacing: -.035em; margin: 16px 0 24px; }
+p { color: #465f58; }
+.lead { font-size: 1.15rem; }
+.button { display: inline-block; background: #126b56; color: white; border: 0; border-radius: 8px; padding: 12px 24px; font: inherit; font-weight: 650; text-decoration: none; cursor: pointer; }
+.button:hover { background: #0d5242; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #b37817; outline-offset: 4px; }
+fieldset { border: 0; margin: 24px 0; padding: 0; min-width: 0; }
+legend, .input-label { font-weight: 650; margin-bottom: 10px; }
+.amounts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 8px; }
+.amount { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 16px 8px; border: 1px solid #baccc1; border-radius: 8px; cursor: pointer; }
+.amount:has(input:checked) { border-color: #126b56; background: #edf6f0; }
+input[type="radio"] { accent-color: #126b56; }
+.input-label { display: block; }
+input[type="number"] { width: 100%; padding: 12px; border: 1px solid #baccc1; border-radius: 8px; font: inherit; }
+.hint { font-size: .85rem; }
+.actions { display: flex; align-items: center; gap: 24px; margin-top: 28px; }
+.error { color: #9b2424; font-weight: 600; }
+.error:empty { display: none; }
+.site-footer { text-align: center; font-size: .8rem; color: #60736b; padding: 16px 24px 40px; }
+@media (max-width: 600px) { .card { margin: 16px; padding: 28px 22px; } .site-header { padding: 20px 16px; } }
